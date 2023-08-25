@@ -5,7 +5,7 @@ metadata:
 spec:
   secretName: acme-crt-prod
   dnsNames:
-  - microservice.tijaniahmed.me
+  - microservice.<domainname>
   issuerRef:
     name: letsencrypt-prod
     # We can reference ClusterIssuers by changing the kind here.
