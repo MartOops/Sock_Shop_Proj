@@ -12,13 +12,13 @@ metadata:
 spec:
   tls:
   - hosts:
-    - microservice.tijaniahmed.me
+    - microservice.<domainname>
     secretName: acme-crt-prod
   rules:
   - host: microservice.<domainname>
     http:
       paths:
-      - path: /sock-shop
+      - path: /
         pathType: Prefix
         backend:
           service:
