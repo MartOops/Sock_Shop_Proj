@@ -7,14 +7,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: frontend
+      app: front-end
   template:
     metadata:
       labels:
-        app: frontend
+        app: front-end
     spec:
       containers:
         - name: frontend
           image: weaveworksdemos/front-end:0.3.12
           ports:
-            - containerPort: 8080
+            - containerPort: 8079
